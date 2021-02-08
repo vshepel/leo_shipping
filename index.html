@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Leo-Shipping</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="/" class="logotype">
+        <img src="img/logotype.svg" alt="Leo Shipping logotype">
+    </a>
+    <div class="header__nav">
+        <a href="#" class="link">О компании</a>
+        <a href="#" class="link">Типы перевозок</a>
+    </div>
+    <a href="tel:7-812-680-12-36" class="header__phone link is-hover">+7 (812) 680-12-36</a>
+    <button class="header__call btn" type="button" data-toggle-form>
+        <span>Написать нам</span>
+    </button>
+    <a href="#" class="header__lang">EN</a>
+</header>
+
+<section class="welcome">
+    <div class="welcome__left">
+        <div class="container">
+            <h1 class="welcome__title">Международные перевозки</h1>
+            <div class="welcome__description">
+                <h2 class="welcome__subtitle">и экспедиторские услуги</h2>
+                <p>Мы предлагаем полный комплекс услуг для доставки грузов до места назначения</p>
+            </div>
+        </div>
+    </div>
+    <div class="welcome__right">
+        <div class="welcome__side">
+            <button type="button" data-toggle-form>Оставьте заявку</button>
+        </div>
+        <form class="form">
+            <h3 class="form__title">Оставьте заявку</h3>
+            <p class="form__description">Мы поможем вам сориентироваться в наших услугах и выбрать более подходящую</p>
+            <div class="form__col">
+                <div class="form__control">
+                    <input type="text" name="surname" placeholder="Фамилия">
+                </div>
+                <div class="form__control">
+                    <input type="text" name="name" placeholder="Имя">
+                </div>
+                <div class="form__control">
+                    <input type="email" name="email" placeholder="E-mail">
+                </div>
+                <div class="form__control">
+                    <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                </div>
+                <div class="form__control form__control--with-line">
+                    <input type="text" name="from" placeholder="Откуда">
+                </div>
+                <div class="form__control">
+                    <input type="text" name="to" placeholder="Куда">
+                </div>
+                <div class="form__control form__control--style-select">
+                    <select name="type-weight">
+                        <option value="Негабартиный" selected>Негабартиный</option>
+                    </select>
+                </div>
+                <div class="form__control form__control--style-select">
+                    <select name="type-danger">
+                        <option value="Опасный" selected>Опасный</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form__center">
+                <button class="btn btn--lg is-hover" type="submit">
+                    <span>Отправить</span>
+                </button>
+                <p class="form__caption">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и
+                    соглашаетесь с Политикой конфиденциальности</p>
+            </div>
+            <div class="form__success">
+                <div class="form__title form__title--marker">Заявка отправлена</div>
+                <p class="form__caption">В ближайшее время наш специалист свяжется с вами для уточнения деталей.</p>
+                <button class="btn is-hover" type="button" data-toggle-form="all">
+                    <span>Закрыть <img src="img/close.svg" alt="Close icon"></span>
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="animation">
+    <img src="img/animation.png" alt="Animation gif">
+</section>
+
+<section class="main">
+    <div class="container">
+        <div class="main__grid">
+            <div>
+                <h2 class="title">О нас</h2>
+            </div>
+            <div>
+                <p class="main__text main__text--lg">
+                    Компания <br>"Leo-Shipping" образована в 2006 году специалистами, имеющими более чем 15-летний опыт
+                    работы в данной отрасли.
+                </p>
+            </div>
+            <div>
+                <p class="main__text">
+                    Мы организуем обслуживание морских, наземных и воздушных перевозок по любым маршрутам, постоянно
+                    расширяя географию наших грузоперевозок.
+                </p>
+            </div>
+            <div>
+                <p class="main__text main__text--md">
+                    Квалифицированные сотрудники оперативно решат поставленные задачи и разработают максимально
+                    эффективную схему международных перевозок и обеспечат непрерывный контроль доверенных нам грузов на
+                    всем маршруте.
+                </p>
+            </div>
+            <div>
+                <div class="main__text main__text--bg" data-aos>
+                    Комплексные услуги <br>для любых видов перевозок
+
+                    <div><img src="img/text-bg.svg" alt="Background text" data-inline-svg></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="types">
+    <div class="container">
+        <div class="types__grid">
+            <div>
+                <h2 class="title">Типы перевозок</h2>
+                <div id="carousel-types-text" class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h3 class="types__subtitle types__subtitle--one">
+                                <span>Морские перевозки</span>
+                                <img src="img/text-bg-2.svg" alt="Background text">
+                            </h3>
+                            <p>Мы осуществляем перевозки:</p>
+                            <ul>
+                                <li>в контейнерах</li>
+                                <li>негабаритных грузов</li>
+                                <li>генеральных грузов в трансшипменте (судовые партии)</li>
+                                <li>мелкопартионных грузов в сборных контейнерах</li>
+                                <li>перевозки опасных грузов</li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3 class="types__subtitle types__subtitle--two">
+                                <span>Страхование <br>и экспедирование</span>
+                                <img src="img/text-bg-4.svg" alt="Background text">
+                            </h3>
+                            <p>Для уверенности в созранности и целостности груза, мы предлагаем полный спектр
+                                транспортно-экспедиторских услуг и страхования. Мы готовы предоставить как полный пакет
+                                услуг, так и частичные работы по экспедированию.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3 class="types__subtitle types__subtitle--three">
+                                <span>Автомобильные перевозки</span>
+                                <img src="img/text-bg-5.svg" alt="Background text">
+                            </h3>
+                            <p>Наши специалисты обеспечивают доставку продукции любыми видами транспорта от склада
+                                завода-производителя до компании-клиента. Вы можете воспользоваться транспортом,
+                                предоставляемым нашей компанией, или же поручить нашим специалистам организацию доставки
+                                с использованием ваших транспортных средств.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <h3 class="types__subtitle types__subtitle--four">
+                                <span>Мультимодальные перевозки</span>
+                                <img src="img/text-bg-6.svg" alt="Background text">
+                            </h3>
+                            <p>Осуществляем транспортацию экспортно-импортных грузов "от двери до двери", а также
+                                осуществление полного спектра услуг по таможенному оформлению грузов на Балтийской,
+                                Санкт-Петербургской и Выборгской таможнях</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="carousel-types-next" class="types__next"></div>
+                <div id="carousel-types" class="swiper-container types__carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/types/1.png" alt="Морские перевозки">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/types/1.png" alt="Морские перевозки">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/types/1.png" alt="Морские перевозки">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/types/1.png" alt="Морские перевозки">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="partners">
+    <div class="container">
+        <div class="partners__grid">
+            <div class="partners__items">
+                <a href="#"><img src="img/partners/logo_1.png" alt="Partner logo"></a>
+                <a href="#"><img src="img/partners/logo_2.png" alt="Partner logo"></a>
+                <a href="#"><img src="img/partners/logo_3.png" alt="Partner logo"></a>
+                <a href="#"><img src="img/partners/logo_4.png" alt="Partner logo"></a>
+                <a href="#"><img src="img/partners/logo_5.png" alt="Partner logo"></a>
+            </div>
+            <div>
+                <h2 class="title">Партнеры</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="request">
+    <div class="container">
+        <div class="request__grid">
+            <div>
+                <h2 class="title">Оставьте заявку</h2>
+                <p>Мы поможем вам сориентироваться в наших услугах и выбрать более подходящую</p>
+            </div>
+            <div>
+                <form class="form">
+                    <div class="form__col">
+                        <div class="form__control">
+                            <input type="text" name="surname" placeholder="Фамилия">
+                        </div>
+                        <div class="form__control">
+                            <input type="text" name="name" placeholder="Имя">
+                        </div>
+                        <div class="form__control">
+                            <input type="email" name="email" placeholder="E-mail">
+                        </div>
+                        <div class="form__control">
+                            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                        </div>
+                        <div class="form__control form__control--with-line">
+                            <input type="text" name="from" placeholder="Откуда">
+                        </div>
+                        <div class="form__control">
+                            <input type="text" name="to" placeholder="Куда">
+                        </div>
+                        <div class="form__control form__control--style-select">
+                            <select name="type-weight">
+                                <option value="Негабартиный" selected>Негабартиный</option>
+                            </select>
+                        </div>
+                        <div class="form__control form__control--style-select">
+                            <select name="type-danger">
+                                <option value="Опасный" selected>Опасный</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__center">
+                        <button class="btn btn--lg is-hover" type="submit">
+                            <span>Отправить</span>
+                        </button>
+                        <p class="form__caption">Нажимая на кнопку, вы даете согласие на обработку своих персональных
+                            данных и соглашаетесь с Политикой конфиденциальности</p>
+                    </div>
+                    <div class="form__success">
+                        <div class="form__title form__title--marker">Заявка отправлена</div>
+                        <p class="form__caption">В ближайшее время наш специалист свяжется с вами для уточнения
+                            деталей.</p>
+                        <button class="btn is-hover" type="button" data-toggle-form="all">
+                            <span>Закрыть <img src="img/close.svg" alt="Close icon"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <a href="/" class="logotype">
+        <img src="img/logotype.svg" alt="Leo Shipping logotype">
+    </a>
+    <div class="footer__nav">
+        <a href="#" class="link">О компании</a>
+        <a href="#" class="link">Типы перевозок</a>
+
+        <div>
+            Санкт-Петербург, Межевой канал, 3, 198035
+        </div>
+    </div>
+    <div class="footer__address">
+        Санкт-Петербург, Межевой канал, 3, 198035
+    </div>
+    <div>
+        <a href="tel:7-812-680-12-36" class="link is-hover">+7 (812) 680-12-36</a>
+        <a href="mailto:director@omegafm.ru" class="link is-hover">director@omegafm.ru</a>
+    </div>
+</footer>
+
+<script src="js/scripts.min.js"></script>
+<script>
+    // Start animation when scroll
+    AOS.init();
+
+    // Replace img to svg inline
+    $('[data-inline-svg]').inlineSvg();
+
+    // Toggle form in welcome section
+    $('[data-toggle-form]').on('click', function () {
+        var val = $(this).data('toggle-form');
+
+        if (val === 'all') {
+            $('.form').removeClass('is-sent');
+            $('.welcome').removeClass('is-open');
+        } else {
+            $('.welcome').toggleClass('is-open');
+        }
+    });
+
+    const swiper = new Swiper('#carousel-types', {
+        loop: true,
+        loopedSlides: 2,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '#carousel-types-next',
+        },
+    });
+
+    const swiperText = new Swiper('#carousel-types-text', {
+        loop: true,
+        loopedSlides: 2,
+        effect: 'fade',
+        //autoHeight: true
+    });
+
+    swiper.controller.control = swiperText;
+    swiperText.controller.control = swiper;
+</script>
+</body>
+</html>
