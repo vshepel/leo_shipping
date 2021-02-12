@@ -15,43 +15,44 @@
         <img src="img/logotype.svg" alt="Leo Shipping logotype">
     </a>
     <div class="header__nav">
-        <a href="#" class="link" onclick="$('html, body').animate({ scrollTop: $('.main').offset().top }, 1000);">О
-            компании</a>
-        <a href="#" class="link" onclick="$('html, body').animate({ scrollTop: $('.types').offset().top }, 1000);">Типы
-            перевозок</a>
+        <a href="#" class="link"
+           onclick="$('html, body').animate({ scrollTop: $('.main').offset().top }, 1000);">About</a>
+        <a href="#" class="link" onclick="$('html, body').animate({ scrollTop: $('.types').offset().top }, 1000);">Transportation
+            modes</a>
     </div>
     <a href="tel:7-812-680-12-36" class="header__phone link is-hover">+7 (812) 680-12-36</a>
     <a href="mailto:director@omegafm.ru" class="header__call btn">
-        <span>Написать нам</span>
+        <span>Contact us</span>
     </a>
-    <a href="#" class="header__lang">EN</a>
+    <a href="#" class="header__lang">RU</a>
 </header>
 
 <section class="welcome">
     <div class="welcome__left">
         <div class="container">
-            <h1 class="welcome__title">Международные перевозки</h1>
+            <h1 class="welcome__title">International shipping</h1>
             <div class="welcome__description">
-                <h2 class="welcome__subtitle">и экспедиторские услуги</h2>
-                <p>Мы предлагаем полный комплекс услуг для доставки грузов до места назначения</p>
+                <h2 class="welcome__subtitle">and forwarding services</h2>
+                <p>We are offering full scope services to deliver cargo to the needed destination</p>
             </div>
         </div>
     </div>
     <div class="welcome__right">
         <div class="welcome__side">
-            <button type="button" data-toggle-form><span>Оставьте заявку</span><i>Закрыть <img src="img/close.svg"
-                                                                                               alt="Close icon"></i>
+            <button type="button" data-toggle-form><span>Submit the request</span><i>Close <img src="img/close.svg"
+                                                                                                alt="Close icon"></i>
             </button>
         </div>
         <form class="form">
-            <h3 class="form__title">Оставьте заявку</h3>
-            <p class="form__description">Мы поможем вам сориентироваться в наших услугах и выбрать более подходящую</p>
+            <h3 class="form__title">Submit the request</h3>
+            <p class="form__description">We will help your define what suits you best for the fully optimised
+                delivery</p>
             <div class="form__col">
                 <div class="form__control">
-                    <input type="text" name="surname" placeholder="Фамилия">
+                    <input type="text" name="surname" placeholder="Surname">
                 </div>
                 <div class="form__control">
-                    <input type="text" name="name" placeholder="Имя">
+                    <input type="text" name="name" placeholder="Name">
                 </div>
                 <div class="form__control">
                     <input type="email" name="email" placeholder="E-mail">
@@ -60,34 +61,36 @@
                     <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
                 </div>
                 <div class="form__control form__control--with-line">
-                    <input type="text" name="from" placeholder="Откуда">
+                    <input type="text" name="from" placeholder="From">
                 </div>
                 <div class="form__control">
-                    <input type="text" name="to" placeholder="Куда">
+                    <input type="text" name="to" placeholder="To">
                 </div>
                 <div class="form__control form__control--style-select">
                     <select name="type-weight">
-                        <option value="Негабартиный" selected>Негабартиный</option>
+                        <option value="Standard" selected>Standard</option>
+                        <option value="Out-of-gauge">Out-of-gauge</option>
                     </select>
                 </div>
                 <div class="form__control form__control--style-select">
                     <select name="type-danger">
-                        <option value="Опасный" selected>Опасный</option>
+                        <option value="Non-hazardous" selected>Non-hazardous</option>
+                        <option value="Hazardous">Hazardous</option>
                     </select>
                 </div>
             </div>
             <div class="form__center">
                 <button class="btn btn--lg is-hover" type="submit">
-                    <span>Отправить</span>
+                    <span>Submit</span>
                 </button>
-                <p class="form__caption">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и
-                    соглашаетесь с Политикой конфиденциальности</p>
+                <p class="form__caption">By submitting a request, you allow to process your data and agree to the terms
+                    of Privacy Policy</p>
             </div>
             <div class="form__success">
-                <div class="form__title form__title--marker">Заявка отправлена</div>
-                <p class="form__caption">В ближайшее время наш специалист свяжется с вами для уточнения деталей.</p>
+                <div class="form__title form__title--marker">Successfully submitted</div>
+                <p class="form__caption">Our specialist will contact you soon to discuss the details.</p>
                 <button class="btn is-hover" type="button" data-toggle-form="all">
-                    <span>Закрыть <img src="img/close.svg" alt="Close icon"></span>
+                    <span>Close <img src="img/close.svg" alt="Close icon"></span>
                 </button>
             </div>
         </form>
@@ -102,30 +105,29 @@
     <div class="container">
         <div class="main__grid">
             <div>
-                <h2 class="title">О нас</h2>
+                <h2 class="title">About Us</h2>
             </div>
             <div>
                 <p class="main__text main__text--lg">
-                    Компания <br>"Leo-Shipping" образована в 2006 году специалистами, имеющими более чем 15-летний опыт
-                    работы в данной отрасли.
+                    “Leo-Shipping” company was founded in 2006 by the market leading specialists with over 15-years of
+                    experience in logistics
                 </p>
             </div>
             <div>
                 <p class="main__text">
-                    Мы организуем обслуживание морских, наземных и воздушных перевозок по любым маршрутам, постоянно
-                    расширяя географию наших грузоперевозок.
+                    We provide services for sea, on-land and air transportation for almost any routes, constantly
+                    expanding the geography of our cargo transportation.
                 </p>
             </div>
             <div>
                 <p class="main__text main__text--md">
-                    Квалифицированные сотрудники оперативно решат поставленные задачи и разработают максимально
-                    эффективную схему международных перевозок и обеспечат непрерывный контроль доверенных нам грузов на
-                    всем маршруте.
+                    Qualified employees will solve the assigned tasks and develop an optimised scheme of international
+                    transportation to ensure continuous control of the goods entrusted to us along the entire route.
                 </p>
             </div>
             <div>
-                <div class="main__text main__text--bg" data-aos>
-                    Комплексные услуги <br>для любых видов перевозок
+                <div class="main__text main__text--bg sm" data-aos>
+                    Comprehensive services for all types of transportation
 
                     <div><img src="img/text-bg.svg" alt="Background text" data-inline-svg></div>
                 </div>
@@ -138,50 +140,50 @@
     <div class="container">
         <div class="types__grid">
             <div>
-                <h2 class="title">Типы перевозок</h2>
+                <h2 class="title">Transportation modes</h2>
                 <div id="carousel-types-text" class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <h3 class="types__subtitle types__subtitle--one">
-                                <span>Морские перевозки</span>
+                                <span>Sea freight</span>
                                 <img src="img/text-bg-2.svg" alt="Background text">
                             </h3>
-                            <p>Мы осуществляем перевозки:</p>
+                            <p>Shipping is organised for:</p>
                             <ul>
-                                <li>в контейнерах</li>
-                                <li>негабаритных грузов</li>
-                                <li>генеральных грузов в трансшипменте (судовые партии)</li>
-                                <li>мелкопартионных грузов в сборных контейнерах</li>
-                                <li>перевозки опасных грузов</li>
+                                <li>containers</li>
+                                <li>out-of-gauge cargo</li>
+                                <li>shipload lots</li>
+                                <li>small lot cargo</li>
+                                <li>dangerous goods</li>
                             </ul>
                         </div>
                         <div class="swiper-slide">
                             <h3 class="types__subtitle types__subtitle--two">
-                                <span>Страхование <br>и экспедирование</span>
+                                <span>Insurance <br>and forwarding</span>
                                 <img src="img/text-bg-4.svg" alt="Background text">
                             </h3>
-                            <p>Для уверенности в сохранности и целостности груза, мы предлагаем полный спектр
-                                транспортно-экспедиторских услуг и страхования. Мы готовы предоставить как полный пакет
-                                услуг, так и частичные работы по экспедированию.</p>
+                            <p>To ensure the cargo safety, we offer a full range of freight forwarding services and
+                                insurance. We are ready to provide both a full package of services and partial
+                                forwarding works.</p>
                         </div>
                         <div class="swiper-slide">
                             <h3 class="types__subtitle types__subtitle--three">
-                                <span>Автомобильные перевозки</span>
+                                <span>Road transportation</span>
                                 <img src="img/text-bg-5.svg" alt="Background text">
                             </h3>
-                            <p>Наши специалисты обеспечивают доставку продукции любыми видами транспорта от склада
-                                завода-производителя до компании-клиента. Вы можете воспользоваться транспортом,
-                                предоставляемым нашей компанией, или же поручить нашим специалистам организацию доставки
-                                с использованием ваших транспортных средств.</p>
+                            <p>Our experts provide delivery of products by any means of transport from the warehouse of
+                                the manufacturing plant to the client company. You can use the transport provided by our
+                                company, or entrust our specialists with the organization of delivery using your
+                                vehicles.</p>
                         </div>
                         <div class="swiper-slide">
                             <h3 class="types__subtitle types__subtitle--four">
-                                <span>Мультимодальные перевозки</span>
+                                <span>Multimodal transportation</span>
                                 <img src="img/text-bg-6.svg" alt="Background text">
                             </h3>
-                            <p>Осуществляем транспортацию экспортно-импортных грузов "от двери до двери", а также
-                                осуществление полного спектра услуг по таможенному оформлению грузов на Балтийской,
-                                Санкт-Петербургской и Выборгской таможнях</p>
+                            <p>We carry out door-to-door transportation of export-import cargo, as well as provide a
+                                full range of services for customs clearance of goods at the Baltic, St. Petersburg and
+                                Vyborg customs</p>
                         </div>
                     </div>
                 </div>
@@ -192,16 +194,16 @@
                 <div id="carousel-types" class="swiper-container types__carousel">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="img/types/1.png" alt="Морские перевозки">
+                            <img src="img/types/1.png" alt="Sea freight">
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/types/1.png" alt="Морские перевозки">
+                            <img src="img/types/1.png" alt="Sea freight">
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/types/1.png" alt="Морские перевозки">
+                            <img src="img/types/1.png" alt="Sea freight">
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/types/1.png" alt="Морские перевозки">
+                            <img src="img/types/1.png" alt="Sea freight">
                         </div>
                     </div>
                 </div>
@@ -221,7 +223,7 @@
                 <a href="#"><img src="img/partners/logo_5.png" alt="Partner logo"></a>
             </div>
             <div>
-                <h2 class="title">Партнеры</h2>
+                <h2 class="title">Partners</h2>
             </div>
         </div>
     </div>
@@ -231,17 +233,17 @@
     <div class="container">
         <div class="request__grid">
             <div>
-                <h2 class="title">Оставьте заявку</h2>
-                <p>Мы поможем вам сориентироваться в наших услугах и выбрать более подходящую</p>
+                <h2 class="title">Submit the request</h2>
+                <p>We will help your define what suits you best for the fully optimised delivery</p>
             </div>
             <div>
                 <form class="form">
                     <div class="form__col">
                         <div class="form__control">
-                            <input type="text" name="surname" placeholder="Фамилия">
+                            <input type="text" name="surname" placeholder="Surname">
                         </div>
                         <div class="form__control">
-                            <input type="text" name="name" placeholder="Имя">
+                            <input type="text" name="name" placeholder="Name">
                         </div>
                         <div class="form__control">
                             <input type="email" name="email" placeholder="E-mail">
@@ -250,35 +252,36 @@
                             <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
                         </div>
                         <div class="form__control form__control--with-line">
-                            <input type="text" name="from" placeholder="Откуда">
+                            <input type="text" name="from" placeholder="From">
                         </div>
                         <div class="form__control">
-                            <input type="text" name="to" placeholder="Куда">
+                            <input type="text" name="to" placeholder="To">
                         </div>
                         <div class="form__control form__control--style-select">
                             <select name="type-weight">
-                                <option value="Негабартиный" selected>Негабартиный</option>
+                                <option value="Standard" selected>Standard</option>
+                                <option value="Out-of-gauge">Out-of-gauge</option>
                             </select>
                         </div>
                         <div class="form__control form__control--style-select">
                             <select name="type-danger">
-                                <option value="Опасный" selected>Опасный</option>
+                                <option value="Non-hazardous" selected>Non-hazardous</option>
+                                <option value="Hazardous">Hazardous</option>
                             </select>
                         </div>
                     </div>
                     <div class="form__center">
                         <button class="btn btn--lg is-hover" type="submit">
-                            <span>Отправить</span>
+                            <span>Submit</span>
                         </button>
-                        <p class="form__caption">Нажимая на кнопку, вы даете согласие на обработку своих персональных
-                            данных и соглашаетесь с Политикой конфиденциальности</p>
+                        <p class="form__caption">By submitting a request, you allow to process your data and agree to
+                            the terms of Privacy Policy</p>
                     </div>
                     <div class="form__success">
-                        <div class="form__title form__title--marker">Заявка отправлена</div>
-                        <p class="form__caption">В ближайшее время наш специалист свяжется с вами для уточнения
-                            деталей.</p>
+                        <div class="form__title form__title--marker">Successfully submitted</div>
+                        <p class="form__caption">Our specialist will contact you soon to discuss the details.</p>
                         <button class="btn is-hover" type="button" data-toggle-form="all">
-                            <span>Закрыть <img src="img/close.svg" alt="Close icon"></span>
+                            <span>Close <img src="img/close.svg" alt="Close icon"></span>
                         </button>
                     </div>
                 </form>
